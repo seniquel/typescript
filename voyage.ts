@@ -18,13 +18,12 @@ class SejourService{
         this._sejours.push(new Sejour("Enfer",-150));
         this._sejours.push(new Sejour("Mickeyville",150));
     }
-    findByNom(nom:string):Sejour | null{
+    findByNom(nom:string):Sejour | void {
         for (let sejour of this._sejours){
             if (sejour.nom == nom){
                 return sejour;
             }
         }
-        return null;
     }
 }
 
